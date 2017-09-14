@@ -1,12 +1,17 @@
 {% extends "layout.html" %}
+{% from "_formhelpers.html" import render_field %}
 {% block head %}
 {{ super() }}
 {% endblock %}
 {% block content %}
 <div class="container">
-  <h1>Index</h1>
+  <h1>Redditor Search</h1>
   <p class="important">
-    Welcome on my awesome homepage.
+    Look up any Redditor and play with interactive graphs!
   </p>
+  <form method="get" action="">
+      {{ render_field(form.username) }}
+  </form>
+
 </div>
 {% endblock %}
