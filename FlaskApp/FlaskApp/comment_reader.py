@@ -3,6 +3,8 @@
 
 import praw
 
+from prawcore.exceptions import NotFound
+
 COMMENT_LIMIT = 100
 
 def init_reddit():
@@ -29,8 +31,11 @@ def get_comments_from_redditor(redditor, reddit):
     :return list of comments
     '''
     comments = []
-    for comment in redditor.comments.new(limit=COMMENT_LIMIT):
-        comments.append(comment.body)
+    try:
+        for comment in redditor.comments.new(limit=COMMENT_LIMIT):
+            comments.append(comment.body)
+    except prawcore.exceptions.NotFound:
+        raise NameError
     return comments
 
 
