@@ -5,7 +5,6 @@ from wtforms.validators import InputRequired
 
 from .comment_reader import init_reddit, get_redditor, get_comments_from_redditor
 
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'TopSecretKey' #TODO: stubbed for testing, move this to ignored config file
 
@@ -23,7 +22,7 @@ def homepage():
 		try:
 			comments = comment_reader.get_comments_from_redditor(redditor, reddit)
 		except NameError:
-			return "User not found."
+			return render_template("index_alert.html", alert_body='User not found. Please try again.', form=form)
 		comment_string = "|".join(comments)
 		return render_template("index_content.html", comment_data=comment_string, form=form)
 	else:
