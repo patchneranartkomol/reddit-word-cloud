@@ -4,12 +4,21 @@
 	{{ super() }}
 {% endblock %}
 {% block content %}
+<script>
+window.onload = function() {
+  document.getElementById('username').addEventListener('submit', function() {
+    Array.prototype.forEach.call(this.elements, function(el) {
+      el.disabled = el.value == '';
+    });
+  }, false);
+};
+</script>
 <div class="container">
   	<h1>Redditor Search</h1>
   	<p class="important">
     	Look up any Redditor and play with interactive graphs!
   	</p>
-	<form method="get" action="">
+	<form method="get" action="" id='username' onsubmit="disableEmptyInputs(this)">
     	{{ render_field(form.username) }}
 	</form>
 	<div>
