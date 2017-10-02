@@ -1,3 +1,7 @@
+**/.DS_Store
 prototype_scripts/
 praw.ini
 .idea/
+local_venv/
+__pycache__/
+FlaskApp/FlaskApp/__pycache__/*
