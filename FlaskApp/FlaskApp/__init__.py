@@ -23,8 +23,7 @@ def homepage():
 			comments = comment_reader.get_comments_from_redditor(redditor, reddit)
 		except NameError:
 			return render_template("index_alert.html", alert_body='User not found. Please try again.', form=form)
-		comment_string = "|".join(comments)
-		return render_template("index_content.html", comment_data=comment_string, form=form)
+		return render_template("index_content.html", comments=comments, form=form)
 	else:
 		return render_template("index.html", form=form)
 

@@ -22,9 +22,12 @@ window.onload = function() {
     	{{ render_field(form.username) }}
 	</form>
 	<div>
-		<p>
-		{{ comment_data }}
+            {% for comment in comments %}
+		<p class="comment">
+		{{ comment }}
 		</p>
+            {% endfor %}
   	</div>
+        <script src="{{ url_for('static', filename='js/d3_script.js') }}">
 </div>
 {% endblock %}
