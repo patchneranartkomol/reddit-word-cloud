@@ -1,0 +1,15 @@
+{
+  "name": "reddit_comment_visualizer",
+  "version": "1.0.0",
+  "description": "Flask App utilizing Reddit API and D3.js for interactive visualizations of user comments",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Patch Neranartkomol",
+  "license": "BSD",
+  "dependencies": {
+    "d3": "^4.11.0",
+    "d3-cloud": "^1.2.4"
+  }
+}

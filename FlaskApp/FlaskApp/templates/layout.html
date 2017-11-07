@@ -8,7 +8,8 @@
 	    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 	    <link href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}" rel="stylesheet">
 	    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-            <script src="https://d3js.org/d3.v4.min.js"></script>
+            <script src="{{ url_for('static', filename='js/node_modules/d3/build/d3.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='js/node_modules/d3-cloud/build/d3.layout.cloud.min.js') }}"></script>
 	    {% endblock %}
 	</head>
     <body>
