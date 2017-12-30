@@ -62,20 +62,6 @@ def extract_top_comments_to_list(comments):
     return top_words
 
 def main():
-    #Creates a new Reddit instance, client_id and client_secret should be defined in your praw.ini
-    # reddit = init_reddit()
-
-    # comments = []
-
-    # redditor_name = 'g4mecrazy' #TODO: stubbed in for testing; get from user
-
-    # redditor = get_redditor(redditor_name, reddit)
-    # for comment in redditor.comments.new(limit=COMMENT_LIMIT):
-    #     comments.append(dict([('text', comment.body)]))
-
-    # comment_json = json.dumps(comments)
-    # print(comment_json)
-    # return comments
     pass
 
 if __name__ == '__main__':
