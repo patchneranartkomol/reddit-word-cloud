@@ -1,6 +1,5 @@
 **/.DS_Store
 prototype_scripts/
-praw.ini
 .idea/
 local_venv/
 __pycache__/
