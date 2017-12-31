@@ -5,3 +5,7 @@ praw.ini
 local_venv/
 __pycache__/
 FlaskApp/FlaskApp/__pycache__/*
+venv
+*.pyc
+staticfiles
+.env
