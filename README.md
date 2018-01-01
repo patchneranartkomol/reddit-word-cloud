@@ -1,6 +1,6 @@
 # Reddit Word Cloud
 
-This is a Flask Application that will generate a word cloud given any Reddit username. Here's an example of my application, deployed on Heroku: reddit-word-cloud.herokuapp.com
+This is a Flask Application that will generate a word cloud given any Reddit username. Here's an example of my application, deployed on [Heroku](reddit-word-cloud.herokuapp.com)
 
 ## Getting Started
 
