@@ -9,7 +9,7 @@
   "author": "Patch Neranartkomol",
   "license": "BSD",
   "dependencies": {
-    "d3": "^4.11.0",
+    "d3": "^7.6.1",
     "d3-cloud": "^1.2.4"
   }
 }
